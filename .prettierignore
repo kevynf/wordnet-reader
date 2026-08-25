@@ -1,0 +1,11 @@
+node_modules/
+pnpm-lock.yaml
+dist/
+.vite/
+coverage/
+data/source/
+public/data/*
+!public/data/demo/
+!public/data/demo/**
+*.log
+*.tsbuildinfo

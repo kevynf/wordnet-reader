@@ -1,0 +1,15 @@
+node_modules/
+.pnpm-store/
+.npm-cache/
+.codex/
+.agents/
+dist/
+.vite/
+coverage/
+data/source/
+public/data/*
+!public/data/demo/
+!public/data/demo/**
+*.log
+*.tsbuildinfo
+.DS_Store

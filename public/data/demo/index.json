@@ -1,0 +1,6 @@
+[
+  { "lemma": "ask", "normalized": "ask", "partsOfSpeech": ["v"], "bucket": "demo" },
+  { "lemma": "dictionary", "normalized": "dictionary", "partsOfSpeech": ["n"], "bucket": "demo" },
+  { "lemma": "open", "normalized": "open", "partsOfSpeech": ["a", "v"], "bucket": "demo" },
+  { "lemma": "WordNet", "normalized": "wordnet", "partsOfSpeech": ["n"], "bucket": "demo" }
+]

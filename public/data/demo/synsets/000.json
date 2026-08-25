@@ -1,0 +1,65 @@
+{
+  "00000001-v": {
+    "id": "00000001-v",
+    "partOfSpeech": "v",
+    "definitions": ["inquire about"],
+    "examples": [{ "text": "I asked about their special today." }],
+    "members": ["ask", "inquire"],
+    "relations": [{ "type": "hypernym", "target": "00000007-v" }],
+    "ili": "i1"
+  },
+  "00000002-v": {
+    "id": "00000002-v",
+    "partOfSpeech": "v",
+    "definitions": ["make a request or demand for something to somebody"],
+    "examples": [{ "text": "She asked him for a loan." }],
+    "members": ["ask", "request"],
+    "relations": [],
+    "ili": "i2"
+  },
+  "00000003-n": {
+    "id": "00000003-n",
+    "partOfSpeech": "n",
+    "definitions": ["a reference book containing an alphabetical list of words with information about them"],
+    "examples": [{ "text": "Look it up in the dictionary." }],
+    "members": ["dictionary", "lexicon"],
+    "relations": [{ "type": "hypernym", "target": "00000006-n" }],
+    "ili": "i3"
+  },
+  "00000004-a": {
+    "id": "00000004-a",
+    "partOfSpeech": "a",
+    "definitions": ["affording free passage or access"],
+    "examples": [],
+    "members": ["open"],
+    "relations": [],
+    "ili": "i4"
+  },
+  "00000005-v": {
+    "id": "00000005-v",
+    "partOfSpeech": "v",
+    "definitions": ["cause to open or to become open"],
+    "examples": [{ "text": "Open the window." }],
+    "members": ["open"],
+    "relations": [],
+    "ili": "i5"
+  },
+  "00000006-n": {
+    "id": "00000006-n",
+    "partOfSpeech": "n",
+    "definitions": ["a lexical database that groups English words into sets of cognitive synonyms"],
+    "examples": [],
+    "members": ["WordNet"],
+    "relations": [],
+    "ili": "i6"
+  },
+  "00000007-v": {
+    "id": "00000007-v",
+    "partOfSpeech": "v",
+    "definitions": ["communicate with words"],
+    "examples": [],
+    "members": ["communicate"],
+    "relations": [],
+    "ili": "i7"
+  }
+}

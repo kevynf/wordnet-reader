@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "demo",
+  "title": "Open English Wordnet Demo",
+  "edition": "2025",
+  "variant": "demo",
+  "source": "https://github.com/globalwordnet/english-wordnet",
+  "generatedAt": "2026-08-24T00:00:00.000Z",
+  "counts": { "lemmas": 4, "entries": 5, "synsets": 7 },
+  "files": [
+    { "path": "entries/demo.json", "bytes": 2270 },
+    { "path": "synsets/000.json", "bytes": 3080 }
+  ],
+  "license": {
+    "name": "CC BY 4.0 and WordNet License",
+    "attribution": "Princeton WordNet and the Open English Wordnet team",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  }
+}

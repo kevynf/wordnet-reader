@@ -1,0 +1,50 @@
+{
+  "ask": [
+    {
+      "lemma": "ask",
+      "normalized": "ask",
+      "partOfSpeech": "v",
+      "pronunciations": [
+        { "value": "ɑːsk", "variety": "GB" },
+        { "value": "æsk", "variety": "US" }
+      ],
+      "senses": [
+        { "id": "ask%2:32:01::", "synsetId": "00000001-v" },
+        { "id": "ask%2:32:02::", "synsetId": "00000002-v" }
+      ]
+    }
+  ],
+  "dictionary": [
+    {
+      "lemma": "dictionary",
+      "normalized": "dictionary",
+      "partOfSpeech": "n",
+      "pronunciations": [{ "value": "ˈdɪkʃəˌnɛɹi" }],
+      "senses": [{ "id": "dictionary%1:10:00::", "synsetId": "00000003-n" }]
+    }
+  ],
+  "open": [
+    {
+      "lemma": "open",
+      "normalized": "open",
+      "partOfSpeech": "a",
+      "pronunciations": [{ "value": "ˈoʊpən", "variety": "US" }],
+      "senses": [{ "id": "open%3:00:01::", "synsetId": "00000004-a" }]
+    },
+    {
+      "lemma": "open",
+      "normalized": "open",
+      "partOfSpeech": "v",
+      "pronunciations": [{ "value": "ˈoʊpən", "variety": "US" }],
+      "senses": [{ "id": "open%2:35:00::", "synsetId": "00000005-v" }]
+    }
+  ],
+  "wordnet": [
+    {
+      "lemma": "WordNet",
+      "normalized": "wordnet",
+      "partOfSpeech": "n",
+      "senses": [{ "id": "wordnet%1:10:00::", "synsetId": "00000006-n" }]
+    }
+  ]
+}
