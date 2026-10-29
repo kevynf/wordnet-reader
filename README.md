@@ -2,7 +2,7 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
-一个注重可读性、支持离线使用的 Open English Wordnet 浏览器。
+一个注重可读性、支持离线使用的 [Open English Wordnet](https://github.com/globalwordnet/english-wordnet) 浏览器。
 
 Wordnet Reader 以紧凑的深色界面展示释义、例句、发音和词汇关系。应用完全运行在浏览器中，无需账号或后端，并且可以缓存完整词典以供离线使用。
 
