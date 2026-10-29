@@ -1,5 +1,7 @@
 # Wordnet Reader
 
+[简体中文](README.zh-CN.md)
+
 A readability-focused, offline-friendly dictionary browser for
 [Open English Wordnet](https://github.com/globalwordnet/english-wordnet).
 
@@ -53,7 +55,7 @@ pnpm build
 
 ## GitHub Pages
 
-在线演示：<https://app.kevy.net/wordnet-reader/>。
+Live demo: <https://app.kevy.net/wordnet-reader/>.
 
 The workflow in `.github/workflows/deploy.yml` installs dependencies from the frozen pnpm lockfile, rebuilds and
 verifies the full dictionary, creates the PWA, and deploys `dist/`.
