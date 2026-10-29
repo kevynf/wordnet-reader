@@ -1,37 +1,34 @@
 # Wordnet Reader
 
-[简体中文](README.zh-CN.md)
+[简体中文](README.md) | [English](README.en.md)
 
-A readability-focused, offline-friendly dictionary browser for
-[Open English Wordnet](https://github.com/globalwordnet/english-wordnet).
+一个注重可读性、支持离线使用的 Open English Wordnet 浏览器。
 
-Wordnet Reader presents definitions, examples, pronunciations, and lexical relations in a compact dark interface. It
-runs entirely in the browser, requires no account or backend, and can cache the complete dictionary for offline use.
+Wordnet Reader 以紧凑的深色界面展示释义、例句、发音和词汇关系。应用完全运行在浏览器中，无需账号或后端，并且可以缓存完整词典以供离线使用。
 
-## Features
+## 功能
 
-- Exact lookup with normalized prefix suggestions
-- Definitions, examples, pronunciations, synonyms, and semantic relations
-- Part-of-speech views with consistent headword-level metadata
-- Local history and favorites stored on the current device
-- Installable PWA with on-demand caching and an optional full offline download
-- Static deployment with no server-side application or database
+- 精确查词与标准化前缀建议
+- 释义、例句、发音、同义词和语义关系
+- 词性视图与一致的词头级元数据
+- 保存在当前设备上的本地历史记录和收藏
+- 可安装的 PWA，支持按需缓存和可选的完整离线下载
+- 无服务端应用或数据库的静态部署
 
-## Quick start
+## 快速开始
 
-Requirements: Node.js 20 or later and pnpm 11.22.0.
+环境要求：Node.js 20 或更高版本，以及 pnpm 11.22.0。
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-The development server uses the four-word demo dataset committed under `public/data/demo/`. Open the URL printed by
-Vite to work on the interface without downloading the full dictionary.
+开发服务器使用提交在仓库中的四词演示数据集。打开 Vite 输出的地址即可在不下载完整词典的情况下开发界面。
 
-## Full dictionary
+## 完整词典
 
-The complete 2025 Plus dataset is generated from the upstream Open English Wordnet release:
+完整的 2025 Plus 数据集根据上游 Open English Wordnet 发布版本生成：
 
 ```sh
 pnpm data:fetch
@@ -39,10 +36,10 @@ pnpm data:build
 pnpm data:verify
 ```
 
-The source archive checksum is pinned in `scripts/config.mjs`. Set `OEWN_SHA256` only when intentionally moving to a
-republished archive. Generated source and dictionary files are excluded from Git; CI rebuilds them before deployment.
+源压缩包的校验值固定在 `scripts/config.mjs` 中。只有在有意迁移到重新发布的压缩包时，才应设置 `OEWN_SHA256`。
+生成的源文件和词典文件不会提交到 Git；CI 会在部署前重新构建它们。
 
-## Verification
+## 验证
 
 ```sh
 pnpm format:check
@@ -51,28 +48,23 @@ pnpm data:verify
 pnpm build
 ```
 
-`pnpm build` creates the static production site in `dist/`. Run `pnpm preview` to inspect that build locally.
+`pnpm build` 会在 `dist/` 中生成静态生产网站。运行 `pnpm preview` 可以检查本地构建结果。
 
 ## GitHub Pages
 
-Live demo: <https://app.kevy.net/wordnet-reader/>.
+在线演示：<https://app.kevy.net/wordnet-reader/>。
 
-The workflow in `.github/workflows/deploy.yml` installs dependencies from the frozen pnpm lockfile, rebuilds and
-verifies the full dictionary, creates the PWA, and deploys `dist/`.
+`.github/workflows/deploy.yml` 工作流会根据锁定的 pnpm lockfile 安装依赖，重新构建并验证完整词典，生成 PWA，然后部署 `dist/`。
 
-To deploy:
+部署步骤：
 
-1. Set the repository's Pages source to **GitHub Actions**.
-2. Push the `main` branch, or run the **Deploy to GitHub Pages** workflow manually.
+1. 将仓库的 Pages 来源设置为 **GitHub Actions**。
+2. 推送 `main` 分支，或手动运行 **Deploy to GitHub Pages** 工作流。
 
-The Vite build uses relative asset paths, so it works from a project subpath on GitHub Pages. No deployment secret is
-required for the pinned upstream release; `OEWN_SHA256` is an optional repository variable for an intentional checksum
-override.
+Vite 构建使用相对资源路径，因此可以在 GitHub Pages 的项目子路径下运行。固定的上游发布版本不需要部署密钥；`OEWN_SHA256` 是可选的仓库变量，仅用于有意覆盖校验值。
 
-## Data and licensing
+## 数据与许可
 
-Application code is available under the [MIT License](LICENSE). Dictionary data retains its upstream Princeton WordNet
-License and Creative Commons Attribution 4.0 terms; see [NOTICE](NOTICE) for attribution and source details.
+应用代码采用 [MIT License](LICENSE)。词典数据保留其上游 Princeton WordNet License 和 Creative Commons Attribution 4.0 条款；详见 [NOTICE](NOTICE) 中的署名和来源信息。
 
-Wordnet Reader is an independent, unofficial browser and is not endorsed by Princeton University, the Global WordNet
-Association, or the Open English Wordnet team.
+Wordnet Reader 是独立的非官方浏览器，不代表 Princeton University、Global WordNet Association 或 Open English Wordnet 团队的立场，也未获得其认可。
